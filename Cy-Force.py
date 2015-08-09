@@ -1,7 +1,7 @@
 import sys,urllib,urllib2,time
 from xml.dom.minidom import parseString
 url='https://172.16.1.1:8090'
-password="1234"
+password=input()
 for x in range(1000,11000):
     if x<10000:
         x="0"+str(x)
