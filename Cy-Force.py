@@ -13,7 +13,7 @@ for x in range(1000,11000):
     message=mtag.replace('<message>','').replace('</message','').replace('<message/>','')
     failmssg="<![CDATA[The system could not log you on. Make sure your password is correct]]>>"
     if message==failmssg:
-        print "{0} - f".format(x)
+        continue
     else:
         print "{0} - success".format(x)
         
