@@ -19,5 +19,3 @@ for x in range(1000,11000):
         print "{0} - blocked".format(x)
     else:
         print "{0} - success".format(x)
-
-        
