@@ -12,8 +12,12 @@ for x in range(1000,11000):
     mtag=simple.getElementsByTagName('message')[0].toxml()
     message=mtag.replace('<message>','').replace('</message','').replace('<message/>','')
     failmssg="<![CDATA[The system could not log you on. Make sure your password is correct]]>>"
+    blockmssg="<![CDATA[You are not allowed to login at this time]]>>"
     if message==failmssg:
-        continue
+        print "{0} - f".format(x)
+    elif message==blockmssg:
+        print "{0} - blocked".format(x)
     else:
         print "{0} - success".format(x)
+
         
